@@ -8,6 +8,10 @@
 	<string>Photo Filter</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Ext-Icon@2x.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.hanuman.Extensions101.${PRODUCT_NAME}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -38,9 +42,5 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.ui-services</string>
 	</dict>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Ext-Icon@2x.png</string>
-	</array>
 </dict>
 </plist>

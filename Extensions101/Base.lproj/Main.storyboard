@@ -16,11 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2a3-bM-AIr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2a3-bM-AIr">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2a3-bM-AIr" secondAttribute="bottom" id="9BM-cU-JSo"/>
+                            <constraint firstItem="2a3-bM-AIr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="QP1-b8-m2Z"/>
+                            <constraint firstAttribute="trailing" secondItem="2a3-bM-AIr" secondAttribute="trailing" id="Zc9-vI-8FT"/>
+                            <constraint firstItem="2a3-bM-AIr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vay-CS-nYG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hbv-ns-btf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="nzl-EK-fAR">

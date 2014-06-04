@@ -47,8 +47,6 @@
                     if(image && !error){
                         
                         dispatch_async(dispatch_get_main_queue(), ^{
-                            //[imageView setImage:item];
-                            
                             [self.imageView setImage:image];
                         });
                         
@@ -57,7 +55,6 @@
                 
             }
         }
-
     }];
     
     

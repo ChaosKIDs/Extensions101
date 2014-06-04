@@ -10,9 +10,14 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 @import CoreImage;
 
+int tapCount;
+
 @interface ActionViewController ()
 
 @property(strong,nonatomic) IBOutlet UIImageView *imageView;
+@property(nonatomic) UIImage *sourceImage;
+@property(nonatomic) NSArray *filterNames;
+@property (strong, nonatomic) IBOutlet UILabel *filterNameLabel;
 
 @end
 
@@ -27,21 +32,21 @@
     return self;
 }
 
-- (UIImage *)filterImage:(UIImage *)sourceImage
-{
-    CIImage *processImage = [[CIImage alloc]initWithImage:sourceImage];
-    CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectInstant" keysAndValues:kCIInputImageKey,processImage, nil];
-    [filter setDefaults];
-    CIContext *context = [CIContext contextWithOptions:nil];
-    CIImage *outputImage = [filter outputImage];
-    CGImageRef imageRef = [context createCGImage:outputImage fromRect:[outputImage extent]];
-    UIImage *resultImage = [UIImage imageWithCGImage:imageRef];
-    
-    return resultImage;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // Filter array setup
+    self.sourceImage = self.imageView.image;
+    self.filterNames = @[@"No effects",
+                         @"CIPhotoEffectChrome",
+                         @"CIPhotoEffectFade",
+                         @"CIPhotoEffectInstant",
+                         @"CIPhotoEffectMono",
+                         @"CIPhotoEffectNoir",
+                         @"CIPhotoEffectProcess",
+                         @"CIPhotoEffectTonal",
+                         @"CIPhotoEffectTransfer",];
+    self.filterNameLabel.text = [self.filterNames objectAtIndex:tapCount];
     
     // Get the item[s] we're handling from the extension context.
     
@@ -56,8 +61,9 @@
                 [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypeImage options:nil completionHandler:^(UIImage *image, NSError *error) {
                     if(image) {
                         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                            self.sourceImage = image;
                             
-                            [imageView setImage:[self filterImage:image]];
+                            [imageView setImage:self.sourceImage];
                         }];
                     }
                 }];
@@ -78,6 +84,31 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (UIImage *)filterImage:(UIImage *)sourceImage
+{
+    CIImage *processImage = [[CIImage alloc]initWithImage:self.sourceImage];
+    CIFilter *filter = [CIFilter filterWithName:[self.filterNames objectAtIndex:tapCount] keysAndValues:kCIInputImageKey,processImage, nil];
+    [filter setDefaults];
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *outputImage = [filter outputImage];
+    CGImageRef imageRef = [context createCGImage:outputImage fromRect:[outputImage extent]];
+    UIImage *resultImage = [UIImage imageWithCGImage:imageRef];
+    
+    return resultImage;
+}
+
+- (IBAction)imageTap:(id)sender {
+    if (tapCount < self.filterNames.count - 1) {
+        tapCount ++;
+        __weak UIImageView *imageView = self.imageView;
+        [imageView setImage:[self filterImage:self.sourceImage]];
+    }else{
+        tapCount = 0;
+        self.imageView.image = self.sourceImage;
+    }
+    self.filterNameLabel.text = [self.filterNames objectAtIndex:tapCount];
+}
 - (IBAction)cancelBTNTap:(id)sender {
     [self.extensionContext cancelRequestWithError:[NSError errorWithDomain:@"User Canceled"
                                                                      code:0
@@ -88,7 +119,7 @@
     // Return any edited content to the host app.
     // This template doesn't do anything, so we just echo the passed in items.
     
-    NSLog(@"Down");
+    NSLog(@"Operation Done");
     
     NSExtensionItem* extensionItem = [[NSExtensionItem alloc] init];
     [extensionItem setAttributedTitle:[[NSAttributedString alloc] initWithString:@"Photo Filter"]];
@@ -96,9 +127,6 @@
     [extensionItem setAttachments:@[[[NSItemProvider alloc] initWithItem:self.imageView.image typeIdentifier:(NSString*)kUTTypeImage]]];
 
     [self.extensionContext completeRequestReturningItems:@[extensionItem] completionHandler:nil];
-
-    
-//    [self.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
 }
 
 @end
