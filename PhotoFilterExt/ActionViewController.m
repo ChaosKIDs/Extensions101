@@ -45,7 +45,8 @@ int tapCount;
                          @"CIPhotoEffectNoir",
                          @"CIPhotoEffectProcess",
                          @"CIPhotoEffectTonal",
-                         @"CIPhotoEffectTransfer",];
+                         @"CIPhotoEffectTransfer",
+                         @"CIVignette",];
     self.filterNameLabel.text = [self.filterNames objectAtIndex:tapCount];
     
     // Get the item[s] we're handling from the extension context.
