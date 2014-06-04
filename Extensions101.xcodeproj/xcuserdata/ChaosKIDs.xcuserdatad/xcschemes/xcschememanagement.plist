@@ -9,9 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PhotoFilterExt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D844ED07193F182200785EE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D844ED1F193F18C800785EE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D844ED40193F1CE800785EE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D88EB492193F0B2300C760CD</key>
 		<dict>
 			<key>primary</key>

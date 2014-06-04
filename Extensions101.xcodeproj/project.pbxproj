@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D844ED47193F1CE800785EE4 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844ED46193F1CE800785EE4 /* ActionViewController.m */; };
+		D844ED49193F1CE800785EE4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D844ED48193F1CE800785EE4 /* MainInterface.storyboard */; };
+		D844ED4C193F1CE800785EE4 /* com.hanuman.Extensions101.PhotoFilterExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D844ED41193F1CE800785EE4 /* com.hanuman.Extensions101.PhotoFilterExt.appex */; };
+		D844ED53193F1D2900785EE4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D844ED52193F1D2900785EE4 /* MobileCoreServices.framework */; };
+		D887645C193F41530048F25B /* Ext-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D887645B193F41530048F25B /* Ext-Icon@2x.png */; };
 		D88EB499193F0B2400C760CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EB498193F0B2400C760CD /* main.m */; };
 		D88EB49C193F0B2400C760CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EB49B193F0B2400C760CD /* AppDelegate.m */; };
 		D88EB49F193F0B2400C760CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EB49E193F0B2400C760CD /* ViewController.m */; };
@@ -16,6 +21,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D844ED1A193F182800785EE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88EB48B193F0B2300C760CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D88EB492193F0B2300C760CD;
+			remoteInfo = Extensions101;
+		};
+		D844ED3B193F19C700785EE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88EB48B193F0B2300C760CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D88EB492193F0B2300C760CD;
+			remoteInfo = Extensions101;
+		};
+		D844ED4A193F1CE800785EE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88EB48B193F0B2300C760CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D844ED40193F1CE800785EE4;
+			remoteInfo = PhotoFilterExt;
+		};
+		D844ED4D193F1CE800785EE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88EB48B193F0B2300C760CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D844ED40193F1CE800785EE4;
+			remoteInfo = PhotoFilterExt;
+		};
 		D88EB4AA193F0B2500C760CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D88EB48B193F0B2300C760CD /* Project object */;
@@ -25,7 +58,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D844ED19193F182300785EE4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D844ED4C193F1CE800785EE4 /* com.hanuman.Extensions101.PhotoFilterExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D844ED22193F18C800785EE4 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		D844ED24193F18C800785EE4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		D844ED41193F1CE800785EE4 /* com.hanuman.Extensions101.PhotoFilterExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.hanuman.Extensions101.PhotoFilterExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D844ED44193F1CE800785EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D844ED45193F1CE800785EE4 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		D844ED46193F1CE800785EE4 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		D844ED48193F1CE800785EE4 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		D844ED52193F1D2900785EE4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D887645B193F41530048F25B /* Ext-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ext-Icon@2x.png"; sourceTree = "<group>"; };
 		D88EB493193F0B2300C760CD /* Extensions101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extensions101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88EB497193F0B2400C760CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D88EB498193F0B2400C760CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,6 +97,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D844ED3E193F1CE800785EE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D844ED53193F1D2900785EE4 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D88EB490193F0B2300C760CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,11 +122,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D844ED21193F18C800785EE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D844ED52193F1D2900785EE4 /* MobileCoreServices.framework */,
+				D844ED22193F18C800785EE4 /* PhotosUI.framework */,
+				D844ED24193F18C800785EE4 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D844ED42193F1CE800785EE4 /* PhotoFilterExt */ = {
+			isa = PBXGroup;
+			children = (
+				D844ED45193F1CE800785EE4 /* ActionViewController.h */,
+				D844ED46193F1CE800785EE4 /* ActionViewController.m */,
+				D844ED48193F1CE800785EE4 /* MainInterface.storyboard */,
+				D844ED43193F1CE800785EE4 /* Supporting Files */,
+			);
+			path = PhotoFilterExt;
+			sourceTree = "<group>";
+		};
+		D844ED43193F1CE800785EE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D887645B193F41530048F25B /* Ext-Icon@2x.png */,
+				D844ED44193F1CE800785EE4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D88EB48A193F0B2300C760CD = {
 			isa = PBXGroup;
 			children = (
 				D88EB495193F0B2300C760CD /* Extensions101 */,
 				D88EB4AC193F0B2500C760CD /* Extensions101Tests */,
+				D844ED42193F1CE800785EE4 /* PhotoFilterExt */,
+				D844ED21193F18C800785EE4 /* Frameworks */,
 				D88EB494193F0B2300C760CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +168,7 @@
 			children = (
 				D88EB493193F0B2300C760CD /* Extensions101.app */,
 				D88EB4A9193F0B2500C760CD /* Extensions101Tests.xctest */,
+				D844ED41193F1CE800785EE4 /* com.hanuman.Extensions101.PhotoFilterExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +216,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D844ED40193F1CE800785EE4 /* PhotoFilterExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D844ED51193F1CE800785EE4 /* Build configuration list for PBXNativeTarget "PhotoFilterExt" */;
+			buildPhases = (
+				D844ED3D193F1CE800785EE4 /* Sources */,
+				D844ED3E193F1CE800785EE4 /* Frameworks */,
+				D844ED3F193F1CE800785EE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoFilterExt;
+			productName = PhotoFilterExt;
+			productReference = D844ED41193F1CE800785EE4 /* com.hanuman.Extensions101.PhotoFilterExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D88EB492193F0B2300C760CD /* Extensions101 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D88EB4B3193F0B2500C760CD /* Build configuration list for PBXNativeTarget "Extensions101" */;
@@ -126,10 +240,13 @@
 				D88EB48F193F0B2300C760CD /* Sources */,
 				D88EB490193F0B2300C760CD /* Frameworks */,
 				D88EB491193F0B2300C760CD /* Resources */,
+				D844ED19193F182300785EE4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D844ED4B193F1CE800785EE4 /* PBXTargetDependency */,
+				D844ED4E193F1CE800785EE4 /* PBXTargetDependency */,
 			);
 			name = Extensions101;
 			productName = Extensions101;
@@ -148,6 +265,8 @@
 			);
 			dependencies = (
 				D88EB4AB193F0B2500C760CD /* PBXTargetDependency */,
+				D844ED1B193F182800785EE4 /* PBXTargetDependency */,
+				D844ED3C193F19C700785EE4 /* PBXTargetDependency */,
 			);
 			name = Extensions101Tests;
 			productName = Extensions101Tests;
@@ -163,8 +282,13 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Hanuman Tech Ltd.";
 				TargetAttributes = {
+					D844ED40193F1CE800785EE4 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 6U69SQJGMM;
+					};
 					D88EB492193F0B2300C760CD = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 6U69SQJGMM;
 					};
 					D88EB4A8193F0B2500C760CD = {
 						CreatedOnToolsVersion = 6.0;
@@ -187,11 +311,21 @@
 			targets = (
 				D88EB492193F0B2300C760CD /* Extensions101 */,
 				D88EB4A8193F0B2500C760CD /* Extensions101Tests */,
+				D844ED40193F1CE800785EE4 /* PhotoFilterExt */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D844ED3F193F1CE800785EE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D844ED49193F1CE800785EE4 /* MainInterface.storyboard in Resources */,
+				D887645C193F41530048F25B /* Ext-Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D88EB491193F0B2300C760CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +345,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D844ED3D193F1CE800785EE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D844ED47193F1CE800785EE4 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D88EB48F193F0B2300C760CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +374,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D844ED1B193F182800785EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D88EB492193F0B2300C760CD /* Extensions101 */;
+			targetProxy = D844ED1A193F182800785EE4 /* PBXContainerItemProxy */;
+		};
+		D844ED3C193F19C700785EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D88EB492193F0B2300C760CD /* Extensions101 */;
+			targetProxy = D844ED3B193F19C700785EE4 /* PBXContainerItemProxy */;
+		};
+		D844ED4B193F1CE800785EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D844ED40193F1CE800785EE4 /* PhotoFilterExt */;
+			targetProxy = D844ED4A193F1CE800785EE4 /* PBXContainerItemProxy */;
+		};
+		D844ED4E193F1CE800785EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D844ED40193F1CE800785EE4 /* PhotoFilterExt */;
+			targetProxy = D844ED4D193F1CE800785EE4 /* PBXContainerItemProxy */;
+		};
 		D88EB4AB193F0B2500C760CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D88EB492193F0B2300C760CD /* Extensions101 */;
@@ -251,6 +413,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D844ED4F193F1CE800785EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoFilterExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.hanuman.Extensions101.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D844ED50193F1CE800785EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PhotoFilterExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.hanuman.Extensions101.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D88EB4B1193F0B2500C760CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Extensions101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -343,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Extensions101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +580,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D844ED51193F1CE800785EE4 /* Build configuration list for PBXNativeTarget "PhotoFilterExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D844ED4F193F1CE800785EE4 /* Debug */,
+				D844ED50193F1CE800785EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D88EB48E193F0B2300C760CD /* Build configuration list for PBXProject "Extensions101" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -404,6 +605,7 @@
 				D88EB4B5193F0B2500C760CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D88EB4B6193F0B2500C760CD /* Build configuration list for PBXNativeTarget "Extensions101Tests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +614,7 @@
 				D88EB4B8193F0B2500C760CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
